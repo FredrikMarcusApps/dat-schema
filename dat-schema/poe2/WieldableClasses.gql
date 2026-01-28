@@ -1,7 +1,7 @@
 ﻿type WieldableClasses {
   ItemClass: ItemClasses
-  _: bool
-  _: bool
+  UsesBothHands: bool
+  MeleeAndRanged: bool
   _: rid
   _: rid
   _: rid
