@@ -88,7 +88,7 @@ type ActiveSkills {
   AudioEvent: CharacterAudioEvents
   _: bool
   ShortDescription: string
-  StatDescriptionType: i32
+  StatDescriptionType: StatDescriptionTypes
   StatDescription: string
   WeaponRequirements: ActiveSkillWeaponRequirement
   _: i32
@@ -6098,8 +6098,8 @@ type WeaponTypes @tags(list: ["item:def"]) {
 
 type WieldableClasses {
   ItemClass: ItemClasses
-  TwoWeaponSlots: bool
-  _: bool
+  UsesBothHands: bool
+  MeleeAndRanged: bool
   Damage: Stats
   CritChance: Stats
   MinPhys: Stats
